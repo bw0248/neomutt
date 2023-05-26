@@ -93,7 +93,7 @@ ap.add_argument('--decryption-pipe', type=shlex.split, default=DECRYPTION_PIPE,
                 help='decryption command (string), reads from stdin and writes '
                 'to stdout, default: "{}"'.format(
                     " ".join(DECRYPTION_PIPE)))
-ap.add_argument('--encryption-pipe', type=shlex.split,
+ap.add_argument('--encryption-pipe', type=shlex.split, default=ENCRYPTION_PIPE,
                 help='encryption command (string), reads from stdin and writes '
                 'to stdout, suggested: "{}"'.format(
                     " ".join(ENCRYPTION_PIPE)))
